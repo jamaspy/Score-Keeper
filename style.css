@@ -1,0 +1,16 @@
+
+body {
+    background-color: whitesmoke;
+}
+
+.centered {
+    margin: 0 auto;
+}
+
+h1{
+    font-family: 'Bungee', cursive;
+}
+
+#scoreInput{
+    border-radius: 10px;
+}

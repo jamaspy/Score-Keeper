@@ -1,0 +1,50 @@
+<DOCTYPE html>
+
+    <head>
+        <title>ScoreKeeper</title>
+        <!--Bootstrap 4 -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+            integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <!-- Custom CSS -->
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <!-- GoogleFonts -->
+        <link href="https://fonts.googleapis.com/css?family=Bungee" rel="stylesheet">
+
+        <!-- I could not get this to work when it was in an external file -->
+        <style>
+            .winner {
+        color: greenyellow;
+        }
+        </style>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="row mt-5">
+                <div class="centered text-center">
+                    <h1 id="displayResult">Score Keeper</h1>
+                    <h1>
+                        <span id="p1Display">0</span> of <span id="p2Display">0</span>
+                    </h1>
+                    <p class="lead">We Are Playing To <span id="playToScoreDisplay">5</span>
+                        <form>
+                            <div class="form-group">
+                                <input type="number" id="scoreInput">
+                                <small class="form-text text-muted">Enter The Score You Want To Play Up To.</small>
+                            </div>
+                            <div class="form-group">
+                                <button class="btn btn-outline-dark" type="button" id="p1">Player One</button>
+                                <button class="btn btn-outline-dark" type="button" id="p2"> Player Two</button>
+                            </div>
+                                <div class="form-group">    
+                                <button class="btn btn-sm btn-outline-danger" type="button" id="resetButton">Reset</button>
+                            </div>
+                        </form>
+                </div>
+            </div>
+        </div>
+        <script type="text/javascript" src="score.js"></script>
+    </body>
+
+    </html>
